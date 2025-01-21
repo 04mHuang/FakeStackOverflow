@@ -1,7 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/tRxoBzS5)
-Add design docs in *images/*
+# Description of Project
+Originally, FakeStackOverflow was an academic project with another collaborator to learn the MERN (Mongodb, Express.js, React, Node.js) tech stack. Built as a replication of the earlier versions of StackOverflow, this is purely for educational purposes. In this repository, I will update and build on the original final product. 
 
-## Instructions to setup and run project
+# Instructions to setup and run project
 - In client and server directories run: ```npm install```
 - In client directory run: ```npm install axios```
 - In server directory run: ```npm install express```
@@ -16,6 +16,17 @@ Add design docs in *images/*
 - In server directory run: ```node server.js```
 - In client directory run: ```npm start```
 
+# Original Contributions
+## Michelle Huang's contribution
+* Searching by text
+* Searching by tags
+* Home Page
+* Questions of a tag
+* Users/Welcome Page
+* Profile Page
+* MongoDB Schema
+* Modularity
+* Code Quality
 
 ## Amanda Ng's contribution
 * Post a New question
@@ -24,17 +35,6 @@ Add design docs in *images/*
 * All Tags page
 * Question/Answer Votes
 * Question/Answer Comments
-* MongoDB Schema
-* Modularity
-* Code Quality
-
-## Michelle Huang's contribution
-* Searching by text
-* Searching by tags
-* Home Page
-* Questions of a tag
-* Users/Welcome Page
-* Profile Page
 * MongoDB Schema
 * Modularity
 * Code Quality
