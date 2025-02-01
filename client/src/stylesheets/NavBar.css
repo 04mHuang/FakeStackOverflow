@@ -7,8 +7,9 @@
   width: 100%;
   padding: 10px;
   background-color: white;
-  border-bottom: 1px solid black;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,.07 );
+  border-top: 3px solid var(--secondary);
+  border-bottom: 1px solid var(--deemphasized2);
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.03 );
   
 }
 .header-title {
@@ -22,43 +23,44 @@
   border: none; 
 }
 .header-title:hover {
-  color: rgb(48,144,226);
+  color: var(--secondary);
   transition: color 150ms ease-in-out;
 }
 #search {
   justify-self: center;
-  padding: 0 15px;
+  padding: 2px 15px;
   font-size: 16px;
   width: 100%;
   height: 1.5em;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid var(--deemphasized1);
+  border-radius: 7px;
+}
+#search:focus {
+  outline-color: var(--primary);
 }
 .nav-buttons {
   justify-self: center;
 }
-.white-button {
-  padding: 5px 10px;
-  background-color: white;
-  color: rgb(48,144,226);
+.white-button, .blue-button {
+  padding: 8px 12px;
   font-weight: bold;
-  border: 1.5px solid rgb(48,144,226);
+  border: 1.5px solid var(--primary);
   border-radius: 4px;
 }
+.white-button {
+  background-color: white;
+  color: var(--primary);
+}
 .white-button:hover {
-  background-color: rgb(227, 227, 227);
+  background-color:  rgba(48,144,226, 0.3);
   transition: background-color, 0.15s, ease-in-out;
 }
 .blue-button {
-  padding: 5px 10px;
-  background-color: rgb(48,144,226);
+  background-color: var(--primary);
   color: white;
-  font-weight: bold;
-  border: 1.5px solid rgb(48,144,226);
-  border-radius: 4px;
 }
 .blue-button:hover {
-  background-color: rgb(38, 113, 178);
+  background-color: var(--primary);
   transition: background-color, 0.15s, ease-in-out;
 }
 .header-title, .white-button, .blue-button {

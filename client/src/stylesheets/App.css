@@ -1,7 +1,15 @@
+:root {
+  --primary: rgb(48,144,226);
+  --secondary: rgb(226, 125, 48);
+  --deemphasized1: rgb(155, 155, 155);
+  --deemphasized2: rgb(206, 206, 206);
+}
+
 /* header */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 #new-question{
     padding-left: 100px;
