@@ -1,4 +1,4 @@
-import '../stylesheets/App.css';
+import '../stylesheets/Questions.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 

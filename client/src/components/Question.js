@@ -19,18 +19,23 @@ export default function Question(props) {
   return (
     <div className="question">
       <span className="question-stats-container">
+      <div className="question-stats">{votes} votes</div>
         <div className="question-stats">{numAnswers} answers</div>
         <div className="question-stats">{views} views</div>
-        <div>Votes: {votes}</div>
+        
       </span>
-      <span className="question-title-container">
+      <span className="question-container">
           <button className="question-title" key={id} onClick={() => props.changeActive("Answers", id)}>{title}</button>
           <p className="question-summary">{summary}</p>
-          {tList}
-        </span>
-        <span className="question-metadata-container">
-          <span className="question-author">{author}</span>
-          <span> asked {formatTime(askDate)}</span>
+          <div className="question-metadata-container">
+            <span>
+              {tList}
+            </span>
+            <span>
+              <span className="question-author">{author}</span>
+              <span className="question-ask-time"> asked {formatTime(askDate)}</span>
+            </span>
+          </div>
         </span>
     </div>
   );

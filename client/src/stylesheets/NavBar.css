@@ -5,10 +5,11 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding: 1vh 1vw;
+  padding: 0 2vw;
+  height: 7vh;
   margin: 0;
   list-style: none;
-  background-color: var(--background);
+  background-color: var(--deemphasized3);
   border-top: 3px solid var(--secondary);
   border-bottom: 1px solid var(--deemphasized2);
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.03 );
