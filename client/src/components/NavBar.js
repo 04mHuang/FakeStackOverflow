@@ -44,12 +44,26 @@ export default function NavBar(props) {
   };
   return (
     <>
-    <div id="header" className="header">
-      <button id="header-title" className="header-title" onClick={() => {changeActive("Welcome")}}>
-        fake<b>StackOverflow</b>
-      </button>
-      <input id="search" type="text" placeholder="Search . . ." onKeyDown={enterPressed} />
-      <div className="nav-buttons">
+    <ul id="navbar">
+      <li>
+        <button id="header-title" className="header-title" onClick={() => {changeActive("Welcome")}}>
+          fake<b>StackOverflow</b>
+        </button>
+      </li>
+      <li>
+        <button className="nav-link" onClick={() => props.changeActive("Questions")}>
+          Questions
+        </button>
+      </li>
+      <li>
+        <button className="nav-link" onClick={() => props.changeActive("Tags")}>
+          Tags
+        </button>
+      </li>
+      <li>
+        <input id="search" type="text" placeholder="Search . . ." onKeyDown={enterPressed} />
+      </li>
+      <li className="nav-buttons">
       {isLoggedIn ? (
         <>
           <button className="white-button" onClick={() => {changeActive("UserProfile")}}>Profile</button>
@@ -63,8 +77,8 @@ export default function NavBar(props) {
           <button className="blue-button" onClick={() => {changeActive("Register")}}>Sign up</button>
         </>
       )}
-      </div>
-    </div>
+      </li>
+    </ul>
     {showNotif && 
       <Notification message="You have been logged out" onClose={closeNotif}/>
     }

@@ -1,6 +1,5 @@
 import '../stylesheets/App.css';
 
-import Menu from './Menu.js';
 import QuestionsPage from './QuestionsPage.js';
 import TagsPage from './TagsPage.js';
 import AnswersPage from './AnswersPage.js';
@@ -33,7 +32,6 @@ export default function MainContent(props) {
 
   return (
     <div>
-      <Menu activePage={activePage} changeActive={changeActive}/>
       <div className="main-content">{pageContent}</div>
     </div>
   );

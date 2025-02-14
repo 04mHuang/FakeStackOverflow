@@ -3,6 +3,7 @@
   --secondary: rgb(226, 125, 48);
   --deemphasized1: rgb(155, 155, 155);
   --deemphasized2: rgb(206, 206, 206);
+  --background: rgb(243, 243, 243);
 }
 
 /* header */
@@ -115,40 +116,7 @@ body {
     transition: background-color, 0.5s;
     cursor: pointer;
   }
-/* menu */
-#menu {
-  position: fixed;
-  height: 100%;
-  width: 150px;
-  font-size: 20px;
-  background-color: white;
-  border-right: 1px dashed black;
-}
-#menu ul {
-  padding-top: 50px;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-#menu li {
-  margin-top: 20%;
-}
-.menu-link {
-  display: block;
-  padding: 5px;
-  background-color: white;
-  color: rgb(67, 126, 228);
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  font-size: 25px;
-  width: 100%
-}
-.active, .menu-link:hover {
-  background-color: rgb(219, 219, 219);
-  transition: background-color, 0.5s;
-}
+  
 /* main content */
 .main-content {
   padding-left: 150px;
